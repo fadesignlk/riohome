@@ -21,6 +21,7 @@
     --spacing-xsm: 0.2rem;
     --spacing-sm: 0.5rem;
     --spacing-md: 1rem;
+    --spacing-md2: 1.3rem;
     --spacing-lg: 1.5rem;
     --spacing-xl: 2rem;
     --spacing-xxl: 7rem;
@@ -316,6 +317,61 @@ img{
   }
 }
 
+/* Brand Logo Section */
+.logo-carousel-container {
+    width: 100%;
+    overflow: hidden; /* Hide overflowing logos */
+    position: relative;
+    background-color: #ffffff;
+    padding: 2rem 0;
+    border-radius: 1rem; /* Rounded corners */
+}
+
+.logo-carousel-track {
+    display: flex;
+    width: fit-content; /* Allow track to be wider than container */
+    animation: scroll-left 30s linear infinite; /* Animation applied here */
+}
+
+.logo-item {
+    flex-shrink: 0; /* Prevent logos from shrinking */
+    width: 150px; /* Fixed width for each logo item */
+    height: 80px; /* Fixed height */
+    margin: 0 2rem; /* Spacing between logos */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Placeholder styling for logos */
+    background-color: #e2e8f0; /* Light gray background for placeholders */
+    border-radius: 0.5rem; /* Rounded corners for logo items */
+    overflow: hidden; /* Ensure image fits within rounded corners */
+}
+
+.logo-item img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; /* Ensure the entire logo is visible */
+    filter: grayscale(100%); /* Make logos grayscale */
+    opacity: 0.7; /* Slightly faded */
+    transition: opacity 0.3s ease, filter 0.3s ease;
+}
+
+.logo-item:hover img {
+    filter: grayscale(0%); /* Color on hover */
+    opacity: 1; /* Full opacity on hover */
+}
+
+/* Keyframes for the scrolling animation */
+@keyframes scroll-left {
+    0% {
+        transform: translateX(0); /* Start at original position */
+    }
+    100% {
+        /* Move left by half the track's content width to loop seamlessly */
+        transform: translateX(-50%);
+    }
+}
+
 /* Footer */
 #footer{
     padding: var(--spacing-lg) 0;
@@ -325,11 +381,17 @@ img{
         margin-bottom: var(--spacing-lg);
     }
 
+    h5{
+      font-size: var(--base-font-size);
+      text-transform: inherit;
+      font-weight: normal;
+    }
+
     .social-icons{
       a{
         font-size: 28px;
         color: var(--color-text-dark);
-        margin-right: var(--spacing-md);
+        margin-right: var(--spacing-md2);
         transition: all var(--transition-duration) var(--transition-easing);
 
         &:hover{
@@ -339,17 +401,20 @@ img{
     }
 
     #user-account{
+      margin-top: var(--spacing-xl);
       a{
         
         h6{
           margin-bottom: 0;
+          text-transform: inherit;
+          font-weight: 500;
         }
         p{
           font-size: 12px;
           margin-bottom: 0;
         }
         .bi{
-            font-size: 35px;
+            font-size: 30px;
             margin-right: var(--spacing-md);
         }
       }
@@ -424,11 +489,20 @@ img{
       }
     
   }
+
+  .logo-item {
+    width: 100px;
+    height: 50px;
+    margin: 0 0.75rem;
+  }
+  .logo-carousel-track {
+      animation-duration: 15s;
+  }
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 600px) {
-
+  
 }
 
 /* Large devices (desktops, 992px and up) */
