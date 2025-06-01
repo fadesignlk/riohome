@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Rio Home | Online Home furniture & Homeware in Sri Lanka</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+</head>
+    <body>
+        <!-- Top Header -->
+        <div class="container-fluid" id="top-header">
+            <div class="row">
+                <div class="col text-center">
+                    <p><span class="fw-bold">Rio Home</span> | Next day delivery to home or free to store.*</p>
+                </div>
+            </div>
+        </div>
+        <!-- End Top Header -->
+        <!-- Navbar -->
+        <nav class="navbar d-flex justify-content-between align-items-center">
+            <div class="container">
+                <div class="d-flex justify-content-start align-items-center">
+                    <div class="navbar-brand">
+                        <a href="#"><img src="./src/img/rio.webp" alt="logo" class="img-fluid logo" id="logo"></a>
+                    </div>
+                    <div class="d-md-flex d-none align-items-center search-bar-container">
+                        <input class="form-control search-bar" type="text" placeholder="Search products or brands" aria-label="Search">
+                        <span id="search-bar-icon"><i class="bi bi-search"></i></span>
+                    </div>
+                </div>
+                <div class="d-flex" id="user-icons">
+                    <a href="#"><i class="bi bi-person-circle me-3"></i></a>
+                    <a href="#"><i class="bi bi-heart me-3"></i></a>
+                    <a href="#"><i class="bi bi-cart"></i></a>
+                </div>
+            </div>                
+        </nav>
+        <div class="navbar-links">
+            <ul class=" container d-flex align-items-center">
+                <li class="nav-item"><a href="index.html">Home</a></li>
+                <li class="nav-item"><a href="#">Furniture</a></li>
+                <li class="nav-item"><a href="#">Homeware</a></li>
+                <li class="nav-item"><a href="#">Decor</a></li>
+                <li class="nav-item"><a href="#">Kitchen</a></li>
+                <li class="nav-item"><a href="#">Outdoor</a></li>
+                <li class="nav-item"><a href="#">Bedding</a></li>
+                <li class="nav-item"><a href="#">Lighting</a></li>
+                <li class="nav-item"><a href="#">Storage</a></li>
+                <li class="nav-item"><a href="#">Bathroom</a></li>
+                <li class="nav-item"><a href="#">Sale</a></li>
+            </ul>
+        </div>
+        <!-- End Navbar -->
+
+        <!-- Filters -->
+        <section id="filters">
+            <div id="mobile-filter" class="container">
+                <div class="d-flex align-items-center">
+                    <div class="d-flex justify-content-center align-items-center flex-grow-1">
+                        <i class="bi bi-arrow-down-up"></i>
+                        <span>Sort</span>
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center flex-grow-1">
+                        <i class="bi bi-sliders"></i>
+                        <span>Filter</span>
+                    </div>
+                </div>
+            </div>
+            <div class="container" id="desktop-filter">
+                <div id="filter-head" class="d-flex justify-content-between align-items-center">
+                    <h3>Sofas & Chairs</h3>
+                    <div class="d-flex align-items-center">
+                        <p class="me-2">Sort by</p>
+                        <select class="form-select w-auto" aria-label="Sort by">
+                            <option selected>Relevance</option>
+                            <option value="1">Most Populary</option>
+                            <option value="2">Price: Low to High</option>
+                            <option value="3">Price: High to Low</option>
+                            <option value="4">New Arrivals</option>
+                        </select>
+                    </div>
+                </div>
+                <div id="filter-options" class="d-flex align-items-center">
+                    <div class="btn-group flex-grow-1">
+                        <button class="btn btn-secondary dropdown-toggle d-flex justify-content-between" type="button" data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false">
+                            Sofa Type
+                            <i class="bi bi-chevron-down"></i>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Corner</a></li>
+                            <li><a class="dropdown-item" href="#">Chair</a></li>
+                            <li><a class="dropdown-item" href="#">5 Seater</a></li>
+                            <li><a class="dropdown-item" href="#">3 Seater</a></li>
+                            <li><a class="dropdown-item" href="#">3 Seater</a></li>
+                            <li><a class="dropdown-item" href="#">2 Seater</a></li>
+                        </ul>
+                    </div>    
+                    <div class="btn-group flex-grow-1">
+                        <button class="btn btn-secondary dropdown-toggle d-flex justify-content-between" type="button" data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false">
+                            Fabric Colour
+                            <i class="bi bi-chevron-down"></i>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Natural</a></li>
+                            <li><a class="dropdown-item" href="#">Grey</a></li>
+                            <li><a class="dropdown-item" href="#">Yellow</a></li>
+                            <li><a class="dropdown-item" href="#">Brown</a></li>
+                            <li><a class="dropdown-item" href="#">Teal</a></li>
+                            <li><a class="dropdown-item" href="#">Pink</a></li>
+                        </ul>
+                    </div>
+                    <div class="btn-group flex-grow-1">
+                        <button class="btn btn-secondary dropdown-toggle d-flex justify-content-between" type="button" data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false">
+                            Brand
+                            <i class="bi bi-chevron-down"></i>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Corner</a></li>
+                            <li><a class="dropdown-item" href="#">Chair</a></li>
+                            <li><a class="dropdown-item" href="#">5 Seater</a></li>
+                            <li><a class="dropdown-item" href="#">3 Seater</a></li>
+                            <li><a class="dropdown-item" href="#">3 Seater</a></li>
+                            <li><a class="dropdown-item" href="#">2 Seater</a></li>
+                        </ul>
+                    </div>
+                    <div class="btn-group flex-grow-1">
+                        <button class="btn btn-secondary dropdown-toggle d-flex justify-content-between" type="button" data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false">
+                            Price Range
+                            <i class="bi bi-chevron-down"></i>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Corner</a></li>
+                            <li><a class="dropdown-item" href="#">Chair</a></li>
+                            <li><a class="dropdown-item" href="#">5 Seater</a></li>
+                            <li><a class="dropdown-item" href="#">3 Seater</a></li>
+                            <li><a class="dropdown-item" href="#">3 Seater</a></li>
+                            <li><a class="dropdown-item" href="#">2 Seater</a></li>
+                        </ul>
+                    </div>    
+                    <div class="btn-group flex-grow-1">
+                        <button class="btn btn-secondary dropdown-toggle d-flex justify-content-between" type="button" data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false">
+                            Fabric Design
+                            <i class="bi bi-chevron-down"></i>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Corner</a></li>
+                            <li><a class="dropdown-item" href="#">Chair</a></li>
+                            <li><a class="dropdown-item" href="#">5 Seater</a></li>
+                            <li><a class="dropdown-item" href="#">3 Seater</a></li>
+                            <li><a class="dropdown-item" href="#">3 Seater</a></li>
+                            <li><a class="dropdown-item" href="#">2 Seater</a></li>
+                        </ul>
+                    </div>
+                    <div class="btn-group flex-grow-1">
+                        <button class="btn btn-secondary dropdown-toggle d-flex justify-content-between" type="button" data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false">
+                            Feature
+                            <i class="bi bi-chevron-down"></i>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Corner</a></li>
+                            <li><a class="dropdown-item" href="#">Chair</a></li>
+                            <li><a class="dropdown-item" href="#">5 Seater</a></li>
+                            <li><a class="dropdown-item" href="#">3 Seater</a></li>
+                            <li><a class="dropdown-item" href="#">3 Seater</a></li>
+                            <li><a class="dropdown-item" href="#">2 Seater</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Footer -->
+        <footer id="footer">
+            <div class="container">
+                <div class="row" id="follow">
+                    <div class="col text-center">
+                        <h5>Follow us on</h5>
+                        <div class="d-flex justify-content-center align-items-center social-icons">
+                            <a href="#"><i class="bi bi-facebook"></i></a>
+                            <a href="#"><i class="bi bi-instagram"></i></a>
+                            <a href="#"><i class="bi bi-tiktok"></i></a>
+                            <a href="#"><i class="bi bi-pinterest"></i></a>
+                            <a href="#"><i class="bi bi-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" id="user-account">
+                    <div class="col-md-3 col-6">
+                        <a href="#" class="d-flex align-items-center">
+                            <i class="bi bi-person"></i> 
+                            <div>
+                                <h6>My Account</h6>
+                                <p>Sign-in to your account</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <a href="#" class="d-flex align-items-center">
+                            <i class="bi bi-globe"></i> 
+                            <div>
+                                <h6>My Account</h6>
+                                <p>Sign-in to your account</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <a href="#" class="d-flex align-items-center">
+                            <i class="bi bi-shop"></i>
+                            <div>
+                                <h6>Store Locator</h6>
+                                <p>Find your nearest store</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <a href="#" class="d-flex align-items-center">
+                            <i class="bi bi-chat-right-dots"></i>
+                            <div>
+                                <h6>Start a Chat</h6>
+                                <p>For general enquiries</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="row" id="bottom-footer">
+                    <div class="col text-center mt-4">
+                        <p>&copy; 2025 Rio Home. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- End Footer -->
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+    </body>
+</html>
