@@ -181,6 +181,10 @@ img{
 
     background-color: var(--color-black);
     ul {
+        #home-link{
+            padding-left: 0;
+        }
+
         li {
             margin-right: var(--spacing-lg);
             font-size: 15px;
@@ -379,7 +383,7 @@ img{
   }
 
   #desktop-filter{
-    padding: var(--spacing-lg) 0;
+
 
     #filter-head{
       padding: var(--spacing-md) 0;
@@ -438,6 +442,164 @@ img{
       }
     }
   }
+}
+
+section#product-grid{
+    margin-top: var(--spacing-lg);
+
+    .card{
+        border: 0;
+        border-radius: 0;
+        /* padding: var(--spacing-md); */
+        text-align: center;
+        transition: all var(--transition-duration) var(--transition-easing);
+
+        img{
+            height: 200px;
+            width: auto;
+            margin-bottom: var(--spacing-sm);
+            border-radius: 0;
+        }
+
+        h5{
+          font-size: 1rem;
+          margin-bottom: var(--spacing-sm);
+          font-weight: 600;
+        }
+
+        p{
+          font-size: 14px;
+          color: var(--color-text-dark);
+          margin-bottom: var(--spacing-sm);
+        }
+
+        .card-price{
+          font-size: 1.2rem;
+          font-weight: 600;
+          color: var(--color-accent);
+          margin-bottom: var(--spacing-sm);
+        }
+
+        button.btn{
+            font-size: 15px;
+            padding: var(--spacing-sm) var(--spacing-lg);
+            border-radius: 50px;
+            transition: all var(--transition-duration) var(--transition-easing);
+            background-color: var(--color-background-light);
+            color: var(--color-text-dark);
+            border: none;
+
+            &:hover{
+                background-color: var(--color-background-dark);
+                color: var(--color-text-light);
+            }
+
+            &:focus{
+              background-color: var(--color-background-dark) !important;
+              color: var(--color-text-light);
+            }
+        }
+    }
+}
+
+section#product-detail{
+    margin-top: var(--spacing-lg);
+
+    .product-detail-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .product-image{
+            img{
+                width: 100%;
+                height: 400px;
+            }
+        }
+
+        .product-info{
+
+            h2{
+                font-size: 2rem;
+                margin-bottom: var(--spacing-md);
+                font-weight: 600;
+            }
+
+            p{
+                font-size: 1.2rem;
+                color: var(--color-text-dark);
+                margin-bottom: var(--spacing-md);
+            }
+
+            .product-price{
+                font-size: 1.5rem;
+                color: var(--color-accent);
+                margin-bottom: var(--spacing-md);
+            }
+
+            button.btn{
+                margin-top: var(--spacing-md);
+            }
+        }
+    }
+
+    .product-details{
+        margin-top: var(--spacing-lg);   
+
+        h3{
+            font-size: 1.5rem;
+            margin-bottom: var(--spacing-md);
+            font-weight: 600;
+        }
+
+        ul{
+            list-style-type: disc;
+            padding-left: 20px;
+
+            li{
+                font-size: 1rem;
+                color: var(--color-text-dark);
+                margin-bottom: var(--spacing-sm);
+            }
+        }
+
+        
+    }
+
+    .related-products{
+        margin-top: var(--spacing-lg);
+
+        h3{
+            font-size: 1.5rem;
+            margin-bottom: var(--spacing-md);
+            font-weight: 600;
+        }
+
+        .card{
+            border: 0;
+            border-radius: 0;
+            transition: all var(--transition-duration) var(--transition-easing);
+
+            .card-body{
+              padding: var(--spacing-md) 0;
+            }
+
+            img{
+                height: 250px;
+                border-radius: 0;            
+            }
+
+            h5{
+              font-size: 1.2rem;
+              margin-bottom: 0;
+            }
+
+            p{
+              font-size: 16px;
+              color: var(--color-text-dark);  
+            }
+        }
+    }
 }
 
 /* Footer */
@@ -564,6 +726,72 @@ img{
       }
     }
 
+    section#product-detail{
+      margin-top: var(--spacing-md);
+
+      .product-detail-container{
+          .product-image{
+              img{
+                  width: 100%;
+                  height: 280px;
+              }
+          }
+
+          .product-info{
+              margin-top: var(--spacing-md);
+
+              h2{
+                  font-size: 1.6rem;
+                  margin-bottom: 0;
+              }
+
+              p{
+                  font-size: .9rem;
+                  margin-bottom: var(--spacing-sm);
+              }
+
+              button.btn{
+                  margin-top: var(--spacing-sm);
+              }
+          }
+      }
+
+      .product-details{
+          margin-top: var(--spacing-xl);   
+
+          h3{
+              font-size: 1.4rem;
+          }         
+      }
+
+      .related-products{
+          margin-top: var(--spacing-xl);
+
+          .row{
+            flex-wrap: nowrap;
+            overflow-x: auto;
+            -ms-overflow-style: none; /* For Internet Explorer and Edge */
+            padding-top:  var(--spacing-md);
+            border-bottom: 1px solid var(--color-border);
+          }
+
+          /* remove scroll bar */
+          .row::-webkit-scrollbar {
+              display: none; /* For Chrome, Safari, and Opera */
+          }
+
+          h3{
+              font-size: 1.4rem;
+          }
+
+          .card{
+              img{
+                  height: 200px;
+              }
+          }
+      }
+  }
+
     #footer{ 
       #user-account{
 
@@ -572,16 +800,17 @@ img{
           }
       }
     
-  }
+    }
 
-  .logo-item {
-    width: 100px;
-    height: 50px;
-    margin: 0 0.75rem;
-  }
-  .logo-carousel-track {
-      animation-duration: 15s;
-  }
+    .logo-item {
+      width: 100px;
+      height: 50px;
+      margin: 0 0.75rem;
+    }
+
+    .logo-carousel-track {
+        animation-duration: 15s;
+    }
 }
 
 /* Medium devices (tablets, 768px and up) */
